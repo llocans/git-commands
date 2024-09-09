@@ -1,0 +1,47 @@
+ls 		List content
+pwd		Print working directory
+cd {name}	Change directory
+cd ..		Go back directory
+start .		Opens directory as folder
+
+touch {name}	Create a new file
+mkdir {name}	Create a new directory
+rm {name}	Remove file
+rm -rf {name}	Remove directory
+
+git status	Gives info about current get repo
+git init	Create new repo in folder
+git log		Gives Log of Commits
+
+git add {name}			Add specific files to the Staging Area
+git add .			Add ALL files to the Staging Area
+git commit -m {"text"}		Add commit message
+git commit -am {"text"}		Add ALL changes to commit and msg.
+
+**ADD FILE TO LAST COMMIT**
+git commit -m {"text"}
+git add forgotten_file
+git commit --amend
+
+git branch			View existing Branches in repo
+git branch -v			View extra info about Branches in repo
+git branch {branch-name}	Create new Branch at current HEAD
+git switch {branch-name}	Swtich to different Branch
+git switch -c {branch-name}	Switch and Create to new Branch
+
+git branch -d {branch-name}	Delete Branch
+git branch -m {branch-name}	Move?/Change Branch name
+
+git merge {branch-name}		Merge {b-name} with CURRENT Branch
+
+git diff			Lists all the changes in dir that are not staged
+git diff HEAD			Lists all the changes since the last commit
+git diff --staged		Lists all the changes that are staged
+git diff HEAD {filename}	Lists all the changes since last comm. in the file
+git diff {branch} {branch}	Lists all the changes between 2 branches
+git diff {hash} {hash}		Lists all the changes between 2 comm. hash
+
+git checkout origin/{branch}	Check how origin/{branch} looks like
+
+git fetch			Fetches main branch into my local repo
+git fetch {branch}		Fetches {branch} into my local repo
